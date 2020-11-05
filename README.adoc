@@ -17,3 +17,18 @@ endif::[]
 ifndef::uk[]
 Bienvenue sur ma page!
 endif::[]
+
+++++
+<script src="javascripts/view-result.js">
+</script>
+<a class="view-result" href="#">view result</a>
+<p>
+Content in a passthrough block is passed to the output unprocessed.
+</p>
+<td class="content">
+<div class="paragraph">
+<p>An admonition block may contain complex content.</p>
+</div>
+</td>
+</script>
+++++
