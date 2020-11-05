@@ -1,0 +1,36 @@
+<style>
+.spoiler{
+	border: solid grey 1px;
+}
+.inner{
+	visibility:hidden;
+}
+</style>
+<script type="text/javascript">
+function showSpoiler(obj)
+{
+var inner = obj.parentNode.getElementsByTagName("div")[0];
+if (inner.style.visibility !== "visible")
+inner.style.visibility = "visible";
+else
+inner.style.visibility = "hidden";
+}
+</script>
+
+
+<div class="spoiler">
+<input onclick="showSpoiler(this);" value="Voir la solution" type="button">
+<div class="inner">
+This
+is a
+spoiler!
+</div>
+</div>
+
+
+<div class="spoiler">
+<input onclick="showSpoiler(this);" value="Voir la solution" type="button">
+<div class="inner">
+La suite
+</div>
+</div>
