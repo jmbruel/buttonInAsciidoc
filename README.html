@@ -446,10 +446,50 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>Welcome to my page!</p>
 </div>
+<div class="paragraph">
+<p>Partie commune</p>
+</div>
+<style>
+.spoiler{
+	border: solid grey 1px;
+}
+.inner{
+	visibility:hidden;
+}
+</style>
+<script type="text/javascript">
+function showSpoiler(obj)
+{
+var inner = obj.parentNode.getElementsByTagName("div")[0];
+if (inner.style.visibility !== "visible")
+inner.style.visibility = "visible";
+else
+inner.style.visibility = "hidden";
+}
+</script>
+<div class="paragraph">
+<p>Exemples</p>
+</div>
+<div class="spoiler">
+<input onclick="showSpoiler(this);" value="Voir la solution" type="button">
+<div class="inner">
+This
+is a
+spoiler!
+</div>
+</div>
+
+
+<div class="spoiler">
+<input onclick="showSpoiler(this);" value="Voir la solution" type="button">
+<div class="inner">
+La suite
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-11-05 09:07:40 +0100
+Last updated 2020-11-05 10:57:50 +0100
 </div>
 </div>
 </body>
